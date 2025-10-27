@@ -1,0 +1,73 @@
+/* === Общие стили === */
+/* Базовая настройка */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3c3c3c;
+    font-family: "Lexend Deca", "Rubik", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+/*body - вариант для темной темы*/
+body.dark-theme {
+    background-color: #3c3c3c;
+    color: rgb(255, 255, 255);
+}
+
+/* Навигационная панель */
+.navbar {
+    position: sticky;
+    top: 3vh;
+    z-index: 200;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2vh;
+    width: 90%;
+    height: 9vh;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 4vh 2vh rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Кнопки навигационного панеля*/
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 7vh;
+    border: none;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family:"Lexend Deca", "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+/* Ховер-эффекты кнопок нав-бара */
+.nav:hover {
+    background-color: rgb(20, 20, 20);
+    transform: scale(1.04);
+}
+
+/* Клик-эффекты кнопок нав-бара */
+.nav:active {
+    background-color: rgb(5, 5, 5);
+    transform: scale(1.01);
+}

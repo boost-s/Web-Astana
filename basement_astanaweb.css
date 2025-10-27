@@ -1,0 +1,51 @@
+.basement-effect {
+    border-radius: 100px;
+    height: 10vh;
+    width: 100%;
+    background-color: #3c3c3c;
+    margin-top: -2vh;
+    z-index: 60;
+}
+
+.basement {
+    background-color: rgb(10, 10, 10);
+    height: 35vh;
+    width: 100%;
+    margin-top: -5vh;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+}
+
+.basement-column1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+.basement-author {
+    font-size: 1.3rem
+}
+
+.basement-text {
+    font-size: 1.3rem;
+    color: rgb(177, 177, 177);
+    font-family: "Lexend Deca", "Rubik", sans-serif;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+a:link {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a:hover {
+  color: rgb(170, 170, 170);
+  text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}

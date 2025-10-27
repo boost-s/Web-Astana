@@ -1,0 +1,333 @@
+/*flexbox of 4th and 5th containers*/
+.container4and5-flexbox {
+    background-color: transparent;
+    border: none;
+    width: 92%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: -9vh;
+    border-radius: 60px;
+    gap: 5vh;
+    transition: all 0.3s;
+    margin-bottom: 5vh;
+}
+
+
+/*Контейнер FAQ*/
+.FAQ-4thcontainer {
+    width: 70%;
+    height: 50vh;
+    background-color: white;
+    border-radius: 60px;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+/*FAQ - вариант темной темы*/
+body.dark-theme .FAQ-4thcontainer {
+    background-color: #505050;
+}
+
+.FAQquestions {
+    height: 9.7vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    border: none;
+    transition: all 0.3s;
+}
+
+.FAQquestions-container {
+    height: 46.8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 1.55vh;
+    width: 70%;
+    margin-left: 2.5vh;
+}
+
+.FAQquestions:hover {
+    border: none;
+    background-color: rgb(26, 26, 26);
+    transform: scale(1.007);
+}
+
+.question-1 {
+    border-radius: 40px 40px 20px 20px;
+}
+
+.question-2, .question-3 {
+    border-radius: 20px;
+}
+
+.question-4 {
+    border-radius: 20px 20px 40px 40px;
+}
+
+.qtext {
+    margin-left: 5vh;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lexend Deca", "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.FAQicon-container {
+    height: 44.5vh;
+    width: 24.5%;
+    margin-top: 2.3vh;
+    margin-left: 1.9vh;
+    background-color: transparent;
+    border-radius: 40px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3),
+    inset 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.FAQanswers-container {
+    position: absolute;
+    height: 45.79vh;
+    width: 61%;
+    background-color: rgba(255, 255, 255, 0.726);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    top: 254vh;
+    left: 10.5vh;
+    transition: transform 0.45s ease, opacity 0.2s ease-in-out;
+}
+
+.answercontainer1 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.FAQanswers-container.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.a1-video {
+    border-radius: 40px;
+    height: 45.79vh;
+    margin-top: 0vh;
+    margin-left: 0vh;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.6);
+}
+
+.a1-text {
+    margin-left: 5vh;
+    margin-top: 13vh;
+    font-size: 1.5rem;
+}
+
+.answercontainer2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.a2-text {
+    margin-left: 10vh;
+    font-size: 1.5rem;
+    margin-top: 16vh;
+}
+
+.answercontainer4 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.a4-text {
+    margin-left: 15vh;
+    font-size: 1.8rem;
+    margin-top: 18vh;
+}
+
+.answercontainer3 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.a3-video {
+    border-radius: 40px;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.6);
+}
+
+.a3-text{
+    margin-left: 5vh;
+    margin-top: 9vh;
+    font-size: 1.5rem;
+}
+
+/*Контейнер меню настроек*/
+.settings-5thcontainer {
+    width: 30%;
+    height: 50vh;
+    background-color: white;
+    border-radius: 60px;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+/*settings - вариант темной темы*/
+body.dark-theme .settings-5thcontainer {
+    background-color: #505050;
+}
+
+/*flexbox of theme changing buttons*/
+.theme-changer-container {
+    width: 90%;
+    height: 18vh;
+    margin-left: 2.3vh;
+    margin-top: 6.2vh ;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+/*theme changing buttons*/
+.tc-button {
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+    width: 48%;
+    height: 18vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3vh 2vh rgba(0, 0, 0, 0.3);
+}
+
+/*icons & part of tc-buttons*/
+.theme-icon {
+    width: 50%;
+    height: 10.5vh;
+    transition: all 0.4s;
+}
+
+/*names of theme, part of tc-buttons*/
+.theme-text {
+    font-family: "Lexend Deca", "Rubik", sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+/*white-theme buttons text & part of tc-buttons*/
+.whiteth-name {
+    color: black;
+}
+
+/*dark-theme buttons text & part of tc-buttons*/
+.darkth-name {
+    color: white;
+}
+
+/*theme changing buttons hover effect, which works only on .theme-icon*/
+.tc-button:hover .theme-icon {
+    transform: scale(1.05);
+}
+
+/*theme changing buttons hover-effect, which works only on .theme-icon*/
+.tc-button:active .theme-icon {
+    transform: scale(0.95);
+}
+
+/*button of dark-theme, part of .theme-changer-container*/
+.dark-theme-btn {
+    background-color: #000000;
+}
+
+/*button of white-theme, part of .theme-changer-container*/
+.white-theme {
+    margin-left: 1vh;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow: 0 0 3vh 2vh rgba(0, 0, 0, 0.2),
+    inset 0 0 3vh 2vh rgba(0, 0, 0, 0.15);
+}
+
+/*line which indicates the current mode, part of .theme-changer-container*/
+.tc-indicator {
+    width: 9%;
+    height: 0.5vh;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    position: absolute;
+    margin-top: 19vh;
+    margin-left: 3.66vh;
+    transition: all 0.5s ease;
+}
+
+.tc-indicator.dt {
+    margin-left: 29vh;
+}
+
+/*flexbox of language changing buttons*/
+.language-changer-container {
+    width: 90%;
+    height: 15vh;
+    margin-left: 2.3vh;
+    margin-top: 6vh ;
+}
+
+/*language changing buttons*/
+.lc-button {
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+    width: 31.7%;
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    font-family: "Lexend Deca", "Rubik", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 0 3vh 2vh rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+/*lc-buttons hover effect*/
+.lc-button:hover {
+    transform: scale(1.01);
+    background-color: #1b1b1b;
+}
+
+/*button of english language*/
+.en-lang {
+    margin-left: 1vh;
+}
+
+/*line which indicates the current mode, part of .language-changer-container*/
+.lc-indicator {
+    width: 5%;
+    height: 0.5vh;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    position: absolute;
+    margin-top: 0.9vh;
+    margin-left: 3.99vh;
+    transition: all 0.45s ease;
+}
+
+.lc-indicator.rus {
+    margin-left: 20.7vh;
+}
+
+.lc-indicator.kaz {
+    margin-left: 37.5vh;
+}
+
+

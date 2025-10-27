@@ -1,0 +1,105 @@
+/* Контейнер двух контейнеров */
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    height: 90vh;
+    gap: 4vh;
+}
+
+/*2 контейнер*/
+.main1 {
+    width: 49%;
+    height: 70vh;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 60px;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+}
+
+/*3 контейнер*/
+.main3 {
+    width: 49%;
+    height: 70vh;
+    margin-top: 5vh;
+    background-color: #F1EEE5;
+    border-radius: 60px;
+    box-shadow: 0 0 3vh 1vh rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Виджет Google Map*/
+.googlemap-widget {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+/*Крутой градиент-эффект 2 контейнера*/
+.main1:after {
+  content: "";
+  position: absolute;
+  top: 176vh;
+  left: 8.6vh;
+  width: 45.08%;
+  height: 70vh;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.4)
+  );
+  border-radius: 60px;
+  transition: all 0.3s;
+}
+
+/*Виджет погоды*/
+.weatherwidget-io {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 7vh;
+}
+
+/*Крутой градиент-эффект 3 контейнера*/
+.main3:after {
+  content: "";
+  position: absolute;
+  top: 176vh;
+  left: 107.3vh;
+  width: 45.08%;
+  height: 70vh;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15)
+  );
+  border-radius: 60px;
+  transition: all 0.3s;
+}
+
+body.dark-theme .main3:after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+body.dark-theme .main1:after {
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.4)
+  );
+}
